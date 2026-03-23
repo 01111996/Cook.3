@@ -26,12 +26,7 @@ def get_shop_list_by_dishes(dishes, person_count):
 
     print(get_shop_list_by_dishes(['Запеченный картофель', 'Омлет'], 2))
 
-# Задание 3 
-for file, name in enumerate (['1.txt', '2.txt']):
-    with open('1.txt', 'r', encoding='utf-8') as f:
-        lines = f.read().splitlines()
-    with open('2.txt', 'r', encoding='utf-8') as f:
-        lines = f.read().splitlines()
+# Задание 3
 file_names = ['1.txt', '2.txt']
 files_data = []
 for file_name in file_names:
@@ -46,3 +41,4 @@ with open('result.txt', 'w') as result:
         result.writelines(lines)
         if lines and not lines[-1].endswith('\n'):
             result.write('\n')
+
